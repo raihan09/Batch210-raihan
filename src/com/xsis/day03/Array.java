@@ -8,8 +8,8 @@ public class Array {
         }*/
         Array arr = new Array();
         //arr.setDiagonalRight(nums);//
-        arr.setDiagonalLeft(nums);
-        //arr.setBox(nums);//
+        //arr.setDiagonalLeft(nums);
+        arr.setBox(nums);//
     }
 
     void setDiagonalLeft(int[][] nums) {
