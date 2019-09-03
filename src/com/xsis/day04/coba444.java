@@ -1,6 +1,6 @@
 package com.xsis.day04;
 
-public class logic3no1 {
+public class coba444 {
     public static void main(String[] args) {
         int [][] matrix = new int[7][7];
         int a=2;

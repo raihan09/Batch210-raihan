@@ -49,13 +49,15 @@ public class logic03no1 {
                 //KANAN
                 else if (j==6){
                     if (i>1 && i<5){
+                        System.out.print("     ");
                         System.out.print(Kanan1);
-                        System.out.print(" ");
+
                         Kanan1 += 3;
                     }
                     if (i==1 || i==5){
+                        System.out.print("      ");
                         System.out.print("3");
-                        System.out.print(" ");
+
                     } break;
                 }
 
