@@ -1,4 +1,4 @@
-package day05;
+package com.xsis.day05;
 
 import java.util.Scanner;
 
