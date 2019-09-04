@@ -1,16 +1,45 @@
 package com.xsis.day06;
 
 public class Employee {
-    String name;
-    final String ssn;
-    String emailAddress;
-    int yearofBirth;
-    static int vacationDay = 10;
+    private String name;
+    private  String ssn;
+    private String emailAddress;
+    private int yearofBirth;
+    private static int vacationDay = 10;
 
-    public Employee(String name, String ssn){
+    public String getName() {
+        return name;
+    }
+
+    public String getSsn() {
+        return ssn;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public int getYearofBirth() {
+        return yearofBirth;
+    }
+
+    public void setName(String name) {
+        if (name != null && name.length() > 0)
+        this.name = name;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        if(emailAddress != "[@.]")
+        this.emailAddress = emailAddress;
+    }
+
+    public void setYearofBirth(int yearofBirth) {
+        this.yearofBirth = yearofBirth;
+    }
+
+    public Employee(String name, String emailAddress){
         this.name =name;
-        this.ssn = ssn;
-
+        this.emailAddress = emailAddress;
     }
     public Employee(String name, String ssn, String emailAddress) {
         this.name = name;

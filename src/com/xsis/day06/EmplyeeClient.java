@@ -2,7 +2,14 @@ package com.xsis.day06;
 
 public class EmplyeeClient {
     public static void main(String[] args) {
-        Employee.vacationDay =15;
+        Employee e1 = new Employee("xsis","1234");
+        e1.setEmailAddress("aa");
+        e1.setName("");
+        e1.print();
+        System.out.println(e1.getName());
+
+        System.out.println(e1.getEmailAddress());
+        /*Employee.vacationDay =15;
         Employee s1 = new Employee("xsis","45");
         //s1.name="xsis";
         //s1.ssn = "45-45-45";
@@ -25,7 +32,7 @@ Employee s4 = s1;
     }
     static void printemployee(Employee e){
         System.out.println("name : " +e.name);
-        System.out.println("ssn : "+e.ssn);
+        System.out.println("ssn : "+e.ssn);*/
     }
 
 
