@@ -1,5 +1,6 @@
 package com.xsis.day07;
 
+
 public class EmployeeDemo {
     public static void main(String[] args) {
         Employee e1 = new Employee("xsis", "1234", "xsis.gmail.com", 1998, 500.00);
@@ -53,7 +54,7 @@ public class EmployeeDemo {
         listEmployee[3] = e4;
         listEmployee[4] = e5;
         findAll(listEmployee);
-        findBySsn(listEmployee);
+        findBySsn(listEmployee, "1234");
 
     }
 
@@ -68,10 +69,10 @@ public class EmployeeDemo {
             System.out.println();
         }
     }
-     static void findBySsn(Employee j[]){
+     static void findBySsn(Employee j[],String Ssn){
         System.out.println("FIND BY SSN");
         for (int i = 0; i < j.length; i++) {
-            if(j[i].getSsn()=="1234"){
+            if(j[i].getSsn()== Ssn){
                 System.out.print(j[i].getName()+" ");
                 System.out.print(j[i].getSsn()+" ");
                 System.out.print(j[i].getEmailAddress()+" ");
@@ -81,7 +82,6 @@ public class EmployeeDemo {
             }
         }
     }
-    /*void findbySSn2 (String Ssn){
-        if(Ssn =)*/
-    }
+
+        }
 
