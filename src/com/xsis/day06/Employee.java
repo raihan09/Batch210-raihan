@@ -24,14 +24,12 @@ public class Employee {
     }
 
     public void setName(String name) {
-        if (name != null && name.length() > 0)
-        this.name = name;
+        if (name != null && name.length() > 0){
+        this.name = name;}
     }
 
     public void setEmailAddress(String emailAddress) {
-        if(emailAddress != "[@.]")
-        this.emailAddress = emailAddress;
-    }
+        this.emailAddress = emailAddress;}
 
     public void setYearofBirth(int yearofBirth) {
         this.yearofBirth = yearofBirth;
