@@ -55,33 +55,52 @@ public class EmployeeDemo {
         listEmployee[4] = e5;
         findAll(listEmployee);
         findBySsn(listEmployee, "1234");
+        maxSalary(listEmployee);
 
     }
 
     static void findAll(Employee j[]) {
         System.out.println("FIND ALL");
         for (int i = 0; i < j.length; i++) {
-            System.out.print(j[i].getName()+" ");
-            System.out.print(j[i].getSsn()+" ");
-            System.out.print(j[i].getEmailAddress()+" ");
-            System.out.print(j[i].getYearOfBirth()+" ");
-            System.out.print(j[i].getSalary()+" ");
+            System.out.print(j[i].getName() + " ");
+            System.out.print(j[i].getSsn() + " ");
+            System.out.print(j[i].getEmailAddress() + " ");
+            System.out.print(j[i].getYearOfBirth() + " ");
+            System.out.print(j[i].getSalary() + " ");
             System.out.println();
         }
     }
-     static void findBySsn(Employee j[],String Ssn){
+
+    static void findBySsn(Employee j[], String Ssn) {
         System.out.println("FIND BY SSN");
         for (int i = 0; i < j.length; i++) {
-            if(j[i].getSsn()== Ssn){
-                System.out.print(j[i].getName()+" ");
-                System.out.print(j[i].getSsn()+" ");
-                System.out.print(j[i].getEmailAddress()+" ");
-                System.out.print(j[i].getYearOfBirth()+" ");
-                System.out.print(j[i].getSalary()+" ");
+            if (j[i].getSsn() == Ssn) {
+                System.out.print(j[i].getName() + " ");
+                System.out.print(j[i].getSsn() + " ");
+                System.out.print(j[i].getEmailAddress() + " ");
+                System.out.print(j[i].getYearOfBirth() + " ");
+                System.out.print(j[i].getSalary() + " ");
                 System.out.println();
             }
         }
     }
 
+    static void maxSalary(Employee j[]) {
+        System.out.println("Max Salary");
+        double max = j[0].getSalary();
+        for (int i = 0; i < j.length; i++) {
+            if (j[i].getSalary() > max) {
+                max = j[i].getSalary();
+                System.out.print(j[i].getName() + " ");
+                System.out.print(j[i].getSsn() + " ");
+                System.out.print(j[i].getEmailAddress() + " ");
+                System.out.print(j[i].getYearOfBirth() + " ");
+                System.out.print(j[i].getSalary() + " ");
+                System.out.println();
+            }
         }
+
+
+    }
+}
 
