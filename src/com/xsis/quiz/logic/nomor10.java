@@ -5,11 +5,14 @@ public class nomor10 {
         Scanner keyboard = new Scanner(System.in);
         char q;
         System.out.println("Please enter values, Q to quit");
-        int a = 0;
-        String y [] = {keyboard.nextLine()};
+
+        int y [] = new int[10];
+
+
         for (int i = 0; i< y.length ; i++) {
+            y[i] = keyboard.nextInt();
+            System.out.println(y[i]+'\n');
             System.out.println();
-            System.out.println(y[i]);
 
                 }
             }
