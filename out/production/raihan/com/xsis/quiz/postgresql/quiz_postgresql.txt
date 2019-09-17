@@ -1,0 +1,12 @@
+1. alter table employees add column tax numeric(8,2)
+2. update employees set tax = salary*10/100
+3. update employees set tax = null where salary <7000
+4.select employee_id,first_name|| ' ' ||last_name full_name,salary,salary-tax total_gaji from employees
+5. select a.department_name,
+count (employee_id) total_pegawai
+from employees b, departments a where a.department_id=b.department_id
+group by a.department_name order by department_name
+6. select employee_id, first_name, last_name, job_title, salary, min_salary, max_salary
+from jobs a, employees b
+where a.job_id = b.job_id and employee_id !=113
+limit 10

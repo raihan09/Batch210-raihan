@@ -1,0 +1,86 @@
+1. How jvm works
+
+Didalam architecture jvm terdapat class loader, memory area, dan execution engine.
+
+a. Pada class loader jvm akan mengeksekusi file dengan ekstensi .class dari file java yang telah di compile oleh java compiler
+
+b. Pada memory area terdapat dua memory yaitu stack dan heap
+- pada memory stack, semua data dan variable lokal yang sudah ditentukan sejak awal akan dialokasikan di memory ini
+- pada memory head, semua objek dari variable lokal pada memori stack akan dialokasikan pada memory ini.
+
+c. execution engine akan mencompile bytecode menjadi mechine code sehingga mesin bisa menjalankan program yang telah dibuat.	
+
+2. perbedaan class vs object
+
+class adalah blueprint yang digunakan untuk membuat object. 1 kelas bisa memiliki banyak object
+object adalah instance dari kelas tertentu. 1 object hanya di create dari 1 class saja
+
+3. 4 komponen utama class
+
+attribute
+method
+acces modifier
+body
+
+4. kegunaan package di java
+
+keguanaan package adalah untuk mengelompokkan class dan interface yang sekelompok dan menjadikannya satu unit dalam library.
+
+* cara pemanggilan class A ke main method class ADemo
+dengan cara mengetikan import com.xsis.pretest.one diatas code class ADemo, karena class berada di package yang berbeda, dan dibawah package com.xsis.pretest.two
+setelah itu membuat class A menjadi instance objek pada class ADemo
+
+
+5. perbedaan static variabel, instance variable, locale variable, instance method dan method static
+
+- static variable merupakan variable yang dideklarasikan menggunakan keyword static dan variable dapat diakses menggunakan nama class atau tidak.
+- instance variable dideklarasikan didalam class, instance variable dapat diakses dengan membuat class menjadi objek.
+- locale variable adalah variable yang dideklarasikan pada methode dan tidak dapat diakses pada methode lainnya.
+- perbedaan instance methode dan static methode adalah ketika ingin menggunakan instance methode maka kita harus membuat class menjadi objek terlebih dahulu sedangkan 
+sedangkan static methode kita hanya perlu menggunakan nama class tanpa membuat objek terlebih dahulu.
+
+
+
+6. buat class student yang meimiliki 3 atribut, nim, nama ,ipk. tentukan tipe data yang sesuai. gunakan metode enkapsulasi
+class student {
+    private String nama;
+    private String nim;
+    private double ipk;
+
+    public String getNama() {
+        return nama;
+    }
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+    public String getNim() {
+            return nim;
+    }
+    public void setNim(String nim) {
+            this.nim = nim;
+    }
+    public float getIpk() {
+            return ipk;
+    }
+    public void setIpk(float ipk) {
+            this.ipk = ipk;
+    }
+}
+
+- fungsi ecapsulation adalah untuk memproteksi data dari unauthoriized acces, konsistensi data dan validasi data serta menyembunyikan data object(atribut/field) yang kita deklarasikan di class
+- akibatnya jika tidak menggunakan metode enkapsulasi data menjadi tidak aman karena data dapat di acces atau di assignment secara bebas di main method
+
+7. jelaskan inheritance
+
+pewarisan sifat method dan attribut dari parent class ke sub class yang di wariskan. keuntungan menggunakan inheritance agar kita dapat menggunakan methode dan attribut yang ada pada parent class tanpa perlu membuatnya lagi.
+
+9. jelaskan beda interface dan abstract
+
+dalam interface hanya ada sekumpulan method header
+tidak memiliki body implementation
+menggunakan keyword implement
+
+abstract blueprint atau template untuk superclass(parent)
+ yang akan di wariskan ke subclass. terletak di class parent
+ dapat memiliki fields dan juga konstruktor
+ menggunakan keyword extends
